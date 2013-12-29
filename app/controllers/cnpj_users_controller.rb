@@ -1,0 +1,2 @@
+class CnpjUsersController < ApplicationController
+end

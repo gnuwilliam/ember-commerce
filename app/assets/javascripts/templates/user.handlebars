@@ -1,0 +1,13 @@
+<form>
+  {{input type="text" name="eMail" placeholder="E-mail"}}
+  {{input type="text" name="password" placeholder="Password"}}
+
+  <button>Login</button>
+</form>
+
+<h1>Create a new user</h1>
+
+{{#link-to 'cpf_user'}}Pessoa Física{{/link-to}}
+{{#link-to 'cnpj_user'}}Pessoa Jurídica{{/link-to}}
+
+{{ outlet }}

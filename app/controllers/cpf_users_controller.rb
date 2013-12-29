@@ -1,0 +1,2 @@
+class CpfUsersController < ApplicationController
+end

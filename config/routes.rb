@@ -1,4 +1,8 @@
 EmberCommerce::Application.routes.draw do
+  resources :cnpj_users
+
+  resources :cpf_users
+
   root :to => 'assets#index'
   get "assets/index"
   # The priority is based upon order of creation: first created -> highest priority.
