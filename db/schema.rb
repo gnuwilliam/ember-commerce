@@ -31,9 +31,9 @@ ActiveRecord::Schema.define(version: 20131229034322) do
   end
 
   create_table "cpf_users", force: true do |t|
-    t.integer  "cpf"
+    t.string   "cpf"
     t.string   "full_name"
-    t.integer  "phone"
+    t.string   "phone"
     t.string   "e_mail"
     t.string   "address"
     t.string   "password"
