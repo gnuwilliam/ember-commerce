@@ -2,11 +2,11 @@
 
 EmberCommerce.CnpjUser = DS.Model.extend({
   cnpj: DS.attr('string'),
-  fantasyName: DS.attr('string'),
-  stateRegistration: DS.attr('number'),
-  fullName: DS.attr('string'),
-  phone: DS.attr('number'),
-  eMail: DS.attr('string'),
+  fantasy_name: DS.attr('string'),
+  state_registration: DS.attr('string'),
+  full_name: DS.attr('string'),
+  phone: DS.attr('string'),
+  e_mail: DS.attr('string'),
   address: DS.attr('string'),
   transporter: DS.attr('string'),
   password: DS.attr('string')
