@@ -3,12 +3,12 @@ EmberCommerce.UserController = Ember.Controller.extend({
     login: function() {
       var user_data = this.getProperties('e_mail', 'password');
 
-      Ember.$.post('/login', user_data).then(function(response) {
+      Ember.$.post('/login', user_data).then(function (response) {
         if (response.error) {
           return alert(response.error);
         }
-        response = response[Object.keys(response)[0]];
-        console.log(response);
+        console.log(response.token);
+        console.log(response.user);
       });
     }
   }
