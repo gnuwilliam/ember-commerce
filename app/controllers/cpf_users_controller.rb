@@ -1,5 +1,5 @@
 class CpfUsersController < ApplicationController
-	def create
+  def create
 		sleep 1
 		render json: CpfUser.create(cpf_user)
 	end
