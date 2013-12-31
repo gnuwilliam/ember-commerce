@@ -1,9 +1,13 @@
-<form {{action 'login' this on="submit"}}>
-  {{input type="text" value=e_mail placeholder="E-mail"}}
-  {{input type="password" value=password placeholder="Password"}}
+{{#if loggedIn}}
+  <button {{action 'logout' on="click"}}>Logout</button>
+{{else}}
+  <form {{action 'login' this on="submit"}}>
+    {{input type="text" value=e_mail placeholder="E-mail"}}
+    {{input type="password" value=password placeholder="Password"}}
 
-  <button>Login</button>
-</form>
+    <button>Login</button>
+  </form>
+{{/if}}
 
 <h1>Create a new user</h1>
 
